@@ -11,5 +11,5 @@ class Book(Base):
 
     __tablename__ = 'BOOK'
 
-    book_id = Column(Integer, primary_key=True, auto_increment=True)
+    book_id = Column(Integer, primary_key=True, autoincrement=True)
     title = Column(String(length=255))

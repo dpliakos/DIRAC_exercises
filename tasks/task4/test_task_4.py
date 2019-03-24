@@ -3,9 +3,9 @@
 import json
 import pytest
 import unittest
-from elasticsearch import NotFoundError
+from elasticsearch import NotFoundError, ConnectionError
 from ..task3.task_3 import ProcessInspector
-from task_4 import ElasticSearchClient
+from .task_4 import ElasticSearchClient
 
 
 TEST_INDEX = "dpliakos-my-index"
@@ -63,7 +63,7 @@ class TaskFour(unittest.TestCase):
             es = client.getES()
             es.info()
             connected = True
-        except ConnectionError, NewConnectionError:
+        except ConnectionError:
             connected = False
 
         self.assertTrue(connected)
