@@ -30,3 +30,7 @@ class ProcessInspector(object):
 
         with open(self.file_name, 'w') as file:
             json.dump(data, file)
+
+    def get_file_path(self):
+        """Return the file path."""
+        return self.file_name
