@@ -3,3 +3,4 @@ __pycache__
 *.pyc
 dpliakos_test_file_create
 dpliakos_test_file_delete
+dpliakos_test_file_process
