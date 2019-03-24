@@ -1,5 +1,5 @@
 .pytest_cache
 __pycache__
-./**/__pycache__
-./**/*.pyc
-dpliakos_test_file
+*.pyc
+dpliakos_test_file_create
+dpliakos_test_file_delete
