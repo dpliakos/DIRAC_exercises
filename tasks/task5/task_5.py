@@ -18,10 +18,9 @@ def getEngine():
     """Connect to the mysql server."""
     global engine
     if (engine is None):
-        conn = "mysql+mysqlconnector://{}:{}@{}:{}/{}".format(USER, PASSWORD,
-                                                              MYSQL_HOST,
-                                                              MYSQL_PORT,
-                                                              DATABASE)
+        conn = "mysql+mysqldb://{}:{}@{}:{}/{}".format(USER, PASSWORD,
+                                                       MYSQL_HOST, MYSQL_PORT,
+                                                       DATABASE)
         engine = create_engine(conn, echo=True)
 
     return engine
